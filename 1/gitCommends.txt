@@ -1,0 +1,14 @@
+dodawanie zapomnianego pliku i ³¹czenie ostatniego commitu:
+
+git commit -m 'commit message'
+git add forgotten_file
+git commit --amend -m "New commit message"   
+
+³¹czenie 3 commitów w 1:
+
+git reset --soft HEAD~3
+git commit -m'new commit message'
+
+schowek:
+git stash - dodaje do schowka
+git stash list - lista plikow w schowku
