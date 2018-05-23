@@ -12,3 +12,7 @@ git commit -m'new commit message'
 schowek:
 git stash - dodaje do schowka
 git stash list - lista plikow w schowku
+git stash apply - zatwierdzenie zmian z schowka
+
+aktualizacja pliku do wersji z innej ga³êzi:
+git checkout <branch_name> -- <paths>
