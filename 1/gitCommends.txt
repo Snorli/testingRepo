@@ -1,0 +1,5 @@
+dodawanie zapomnianego pliku i ³¹czenie ostatniego commitu:
+
+git commit -m 'commit message'
+git add forgotten_file
+git commit --amend -m "New commit message"   
