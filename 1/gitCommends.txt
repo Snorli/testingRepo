@@ -3,26 +3,33 @@ git commit -m 'commit message'
 git add forgotten_file
 git commit --amend -m "New commit message"   
 
-reset 3 commitow i stworzenie nowego:
-git reset --soft HEAD~3
-git commit -m'new commit message'
-
 schowek:
 git stash - dodaje do schowka
 git stash list - lista plikow w schowku
 git stash apply - zatwierdzenie zmian z schowka
 
 usuwanie:
-git reset --hard HEAD - usuwa zmiany w plikach, przywraca stan do tego z ostatniego commita
-git reset HEAD 1/eightFile.txt - po zrobieniu git add. usuwa plik z poczekalni
-git checkout <file> - przywraca stan pliku do tego z ostatniego commita
+git reset --HEAD~1 - usuwa ostatni commit
+git checkout -- <file> - usuwa niezatwierdzone zmiany z pliku po resecie
 git checkout <branch> -- <file> - przywraca stan pliku do stanu z innego brancha
 
-git stash -u - przenosi wszystkie nowe, niescommitowane pliki do schowka
+git stash -u - przenosi wszystkie nowe, niescommitowane zmiany do schowka
 git stash push <file> - przenosi konkretny plik do schowka
 git stash clear - czysci schowek
 
-³¹czenie commitów które zosta³y juz wypchane do zdalnego repo:
+³¹czenie 4 commitów które zosta³y juz wypchane do zdalnego repo:
 git reset --soft HEAD~4
 git commit -m""
-git push - origin my_branch
+git push -f origin my_branch
+
+git commit -a -m"message" - bezposredni commit zmodyfikowanego pliku
+git log --oneline - wyswietla historie commitów w jednej linii
+
+git revert <commit hash> - odwraca ostatni commit i tworzy nowy
+
+git merge <branch> - do³¹cza <branch> do galezi na ktorej aktualnie sie znajdujemy
+
+####forking
+git remote -v - sprawdzenie przypisanych zdalnych repo
+git remote add upstream <repo> - dodanie zdalnego repozytorium nadrzednego
+git push --set-upstream origin <branch> - wypchanie zmian do repo nadrzednego i zaleznego

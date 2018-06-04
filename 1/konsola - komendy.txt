@@ -1,0 +1,6 @@
+ls - lista dostêpnych plików/katalogów do których mamy dostep z obecnego poziomu
+cd ... - przejscie do wskazanego katalogu
+cd ../ - powrót do katalogu wyzej. cd ../../ - przejscie 2 katalogi wyzej itp.
+cd ../../Documents - przechodzi 2 foldery wyzej i otwiera folder Documents(jezeli istnieje)
+start . - otwiera bie¿¹cy folder
+rm "xxx" - usuwa plik
